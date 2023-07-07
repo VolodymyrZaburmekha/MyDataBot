@@ -1,0 +1,11 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+venv/
+.idea/
+.DS_Store
+*.db
+.vscode/
+__pycache__

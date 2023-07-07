@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bot", "Bot", "{C2B41A5C-1AEC-4898-A61C-F77115F6A37B}"
+	ProjectSection(SolutionItems) = preProject
+		Bot\MyDataBot.Bot.Ai\requirements.txt = Bot\MyDataBot.Bot.Ai\requirements.txt
+		Bot\MyDataBot.Bot.Ai\main.py = Bot\MyDataBot.Bot.Ai\main.py
+		Bot\MyDataBot.Bot.Ai\lama.py = Bot\MyDataBot.Bot.Ai\lama.py
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BotManager", "BotManager", "{3D8245BC-13C6-4A83-86EE-23F39BCEECDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserManager", "UserManager", "{F04DC796-51DB-41CA-BF40-D090F10E1A58}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDataBot.Bot.Core", "Bot\MyDataBot.Bot.Core\MyDataBot.Bot.Core.fsproj", "{16867EFB-AF87-4D6C-8983-6BBE411F7D93}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDataBot.Bot.Application", "Bot\MyDataBot.Bot.Application\MyDataBot.Bot.Application.fsproj", "{7FC68EF1-5535-474C-BB7F-63A7A274F559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataBot.Bot.Data", "Bot\MyDataBot.Bot.Data\MyDataBot.Bot.Data.csproj", "{B61447A2-888A-40F1-9E8E-B1C17643A80F}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDataBot.Bot.Telegram", "Bot\MyDataBot.Bot.Telegram\MyDataBot.Bot.Telegram.fsproj", "{D1D275E2-BE12-4629-A7A0-8C41E72FE09F}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDataBot.Bot.Common", "Bot\MyDataBot.Bot.Common\MyDataBot.Bot.Common.fsproj", "{6A8500B9-03E1-4C23-BDCC-1D63695B5379}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDataBot.Bot.Dependencies", "Bot\MyDataBot.Bot.Dependencies\MyDataBot.Bot.Dependencies.fsproj", "{FB1E4E17-0269-4AA4-A7CD-2D8153CA926C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDataBot.Bot.Api", "Bot\MyDataBot.Bot.Api\MyDataBot.Bot.Api.fsproj", "{B921EB53-FBDE-4F1C-BB84-2DCABA51799E}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDataBot.Bot.Nats", "Bot\MyDataBot.Bot.Nats\MyDataBot.Bot.Nats.fsproj", "{D1CE0918-07D5-4212-89C9-EF9DDE1D8F4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16867EFB-AF87-4D6C-8983-6BBE411F7D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16867EFB-AF87-4D6C-8983-6BBE411F7D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16867EFB-AF87-4D6C-8983-6BBE411F7D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16867EFB-AF87-4D6C-8983-6BBE411F7D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC68EF1-5535-474C-BB7F-63A7A274F559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC68EF1-5535-474C-BB7F-63A7A274F559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC68EF1-5535-474C-BB7F-63A7A274F559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC68EF1-5535-474C-BB7F-63A7A274F559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61447A2-888A-40F1-9E8E-B1C17643A80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61447A2-888A-40F1-9E8E-B1C17643A80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61447A2-888A-40F1-9E8E-B1C17643A80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61447A2-888A-40F1-9E8E-B1C17643A80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D275E2-BE12-4629-A7A0-8C41E72FE09F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D275E2-BE12-4629-A7A0-8C41E72FE09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D275E2-BE12-4629-A7A0-8C41E72FE09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D275E2-BE12-4629-A7A0-8C41E72FE09F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A8500B9-03E1-4C23-BDCC-1D63695B5379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8500B9-03E1-4C23-BDCC-1D63695B5379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8500B9-03E1-4C23-BDCC-1D63695B5379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8500B9-03E1-4C23-BDCC-1D63695B5379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1E4E17-0269-4AA4-A7CD-2D8153CA926C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1E4E17-0269-4AA4-A7CD-2D8153CA926C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1E4E17-0269-4AA4-A7CD-2D8153CA926C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1E4E17-0269-4AA4-A7CD-2D8153CA926C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B921EB53-FBDE-4F1C-BB84-2DCABA51799E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B921EB53-FBDE-4F1C-BB84-2DCABA51799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B921EB53-FBDE-4F1C-BB84-2DCABA51799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B921EB53-FBDE-4F1C-BB84-2DCABA51799E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CE0918-07D5-4212-89C9-EF9DDE1D8F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CE0918-07D5-4212-89C9-EF9DDE1D8F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CE0918-07D5-4212-89C9-EF9DDE1D8F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CE0918-07D5-4212-89C9-EF9DDE1D8F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16867EFB-AF87-4D6C-8983-6BBE411F7D93} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+		{7FC68EF1-5535-474C-BB7F-63A7A274F559} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+		{B61447A2-888A-40F1-9E8E-B1C17643A80F} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+		{D1D275E2-BE12-4629-A7A0-8C41E72FE09F} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+		{6A8500B9-03E1-4C23-BDCC-1D63695B5379} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+		{FB1E4E17-0269-4AA4-A7CD-2D8153CA926C} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+		{B921EB53-FBDE-4F1C-BB84-2DCABA51799E} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+		{D1CE0918-07D5-4212-89C9-EF9DDE1D8F4E} = {C2B41A5C-1AEC-4898-A61C-F77115F6A37B}
+	EndGlobalSection
+EndGlobal

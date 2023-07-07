@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsToolkit.ErrorHandling" Version="4.6.0" />
+    <PackageReference Include="FsToolkit.ErrorHandling.TaskResult" Version="4.6.0" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Commands\Command.fs" />
+    <Compile Include="Commands\SendMessageCommand.fs" />
+    <Compile Include="Commands\SetChatActionCommand.fs" />
+    <Compile Include="Commands\SendNewBotMessageForProcessingCommand.fs" />
+    <Compile Include="Commands\ProcessAiResponseCommand.fs" />
+    <Compile Include="Commands\InitBotByMetadataCommand.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyDataBot.Bot.Common\MyDataBot.Bot.Common.fsproj" />
+    <ProjectReference Include="..\MyDataBot.Bot.Core\MyDataBot.Bot.Core.fsproj" />
+    <ProjectReference Include="..\MyDataBot.Bot.Data\MyDataBot.Bot.Data.csproj" />
+    <ProjectReference Include="..\MyDataBot.Bot.Dependencies\MyDataBot.Bot.Dependencies.fsproj" />
+    <ProjectReference Include="..\MyDataBot.Bot.Telegram\MyDataBot.Bot.Telegram.fsproj" />
+  </ItemGroup>
+
+</Project>

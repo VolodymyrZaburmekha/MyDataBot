@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\MessageLog.fs" />
+    <Compile Include="Data\QuotaRepository.fs" />
+    <Compile Include="Data\TelegramBotRepository.fs" />
+    <Compile Include="Data\BotsRepository.fs" />
+    <Compile Include="AsyncBotMessageProcessing\IProcessMessageQueue.fs" />
+    <Compile Include="BotImplementations\ITelegramBotClientFactory.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyDataBot.Bot.Common\MyDataBot.Bot.Common.fsproj" />
+    <ProjectReference Include="..\MyDataBot.Bot.Core\MyDataBot.Bot.Core.fsproj" />
+  </ItemGroup>
+
+</Project>

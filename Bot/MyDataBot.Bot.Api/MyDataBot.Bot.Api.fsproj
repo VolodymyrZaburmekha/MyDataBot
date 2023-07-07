@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Controllers\TelegramController.fs" />
+    <Compile Include="Configuration\ConfigurationModels.fs" />
+    <Compile Include="Configuration\ServicesConfig.fs" />
+    <Compile Include="HostedServices\BotsHostedService.fs" />
+    <Compile Include="HostedServices\ProcessedMessageService.fs" />
+    <Compile Include="Program.fs" />
+    <None Include="Scratchpad.fsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+    <PackageReference Include="Telegram.Bot" Version="19.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyDataBot.Bot.Application\MyDataBot.Bot.Application.fsproj" />
+    <ProjectReference Include="..\MyDataBot.Bot.Core\MyDataBot.Bot.Core.fsproj" />
+    <ProjectReference Include="..\MyDataBot.Bot.Nats\MyDataBot.Bot.Nats.fsproj" />
+  </ItemGroup>
+
+</Project>

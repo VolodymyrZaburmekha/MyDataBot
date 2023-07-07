@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Common\Bot.fs" />
+    <Compile Include="Common\Message.fs" />
+    <Compile Include="Common\BotDataFunctions.fs" />
+    <Folder Include="UseCases\UploadData" />
+    <Compile Include="UseCases\AskQuestion\MessagePreProcessor.fs" />
+    <Compile Include="UseCases\AskQuestion\AskQuestion.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsToolkit.ErrorHandling" Version="4.6.0" />
+    <PackageReference Include="Ulid" Version="1.2.6" />
+  </ItemGroup>
+
+</Project>
